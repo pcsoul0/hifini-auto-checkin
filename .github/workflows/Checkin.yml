@@ -30,7 +30,7 @@ jobs:
         run: |
           node main.js
 
-        - name: PushPlus 通知
+      - name: PushPlus 通知
         if: ${{ always() && env.PUSHPLUS_TOKEN }}
         shell: bash
         run: |
